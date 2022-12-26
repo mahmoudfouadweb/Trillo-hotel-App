@@ -1,0 +1,60 @@
+/////////////////////////////////////////////
+// LOGO
+
+.logo{
+  width: 50rem;
+  height: 20rem,;
+}
+
+
+.search__icon{
+  width: 50rem;
+}
+/////////////////////////////////////////////
+// SEARCH
+.search{
+  width: 90rem;
+  
+  &__input{
+    background-color: blue;
+    width: 100rem;
+  }
+  
+  &__button{
+
+  }
+  
+  &__icon{
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+
+
+/////////////////////////////////////////////
+// USER NAVIGATION
+.user-nav{
+  &__icon-box{
+    
+  }
+  
+  &__icon-icon{
+    
+  }
+  
+  
+  &__icon-notification{
+    
+  }
+  
+  &__icon-user{
+    
+  }
+  
+  &__icon-photo{
+    width: 2.4rem;
+  }
+  
+  &__icon-user-name{}
+}
