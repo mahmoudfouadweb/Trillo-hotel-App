@@ -1,0 +1,67 @@
+:root {
+  --color-secondary: #222;
+  --color-primary: #eb2f64;
+  --color-primary-light: #FF3366;
+  --color-primary-dark: #BA265D;
+  --color-grey-light-100: #faf9f9;
+  --color-grey-light-200: #f4f2f2;
+  --color-grey-light-300: #f0eeee;
+  --color-grey-light-400: #ccc;
+  --color-grey-dark-100: #333;
+  --color-grey-dark-200: #777;
+  --color-grey-dark-300: #999;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-100);
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-size: 3.2rem;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-300);
+}
+
+.header {
+  background-color: var(--color-grey-dark-100);
+  color: var(--color-grey-light-100);
+}
+
+.content {
+  display: flex;
+  min-height: 50rem;
+}
+
+.sidebar {
+  background-color: var(--color-grey-dark-200);
+  flex: 0 0 18%;
+}
+
+.hotel-view {
+  background-color: rebeccapurple;
+  flex: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
