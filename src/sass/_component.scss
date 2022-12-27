@@ -2,7 +2,6 @@
 // LOGO
 
 .logo{
-  width: 3.7rem;
   height: 3.7rem,;
   margin-left: 3rem;
   
@@ -13,15 +12,44 @@
 /////////////////////////////////////////////
 // SEARCH
 .search{
-flex: 0 0 40%;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 40%;
+
   &__input{
     font-family: inherit;
     font-size: inherit;
+    color: inherit;
     background-color: var(--color-grey-light-200);
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    
+    &:focus{
+      outline: none;
+      width: 100%;
+      transition: all 0.2s ease-in;
+      background-color: var(--color-grey-light-300);
+    }
+  }
+  
+  &__input:focus + &__button {
+    background-color: var(--color-grey-light-300);
   }
   
   &__button{
+    border: none;
+    background-color: var(--color-grey-light-200);
+    
+    &:focus{
+      outline: none;
+    }
+    
+    &:active{
+      transform: translateY(2px);
+    }
 
   }
   
@@ -36,7 +64,11 @@ flex: 0 0 40%;
 /////////////////////////////////////////////
 // USER NAVIGATION
 .user-nav{
-
+display: flex;
+flex: 0 0 10%;
+justify-content: space-between;
+align-items: center;
+  
   &__icon-box{
     
   }
@@ -52,7 +84,9 @@ flex: 0 0 40%;
   }
   
   &__user{
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   &__user-photo{
@@ -62,5 +96,6 @@ flex: 0 0 40%;
   }
   
   &__user-name{
+    color: var(--color-grey-dark-200);
   }
 }
