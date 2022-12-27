@@ -13,7 +13,7 @@
 // --color-grey-dark-300: #999;
 
 .container{
-  max-width: 144rem;
+  max-width: 120rem;
   margin: 8rem auto;
   min-height: 50rem;
   box-shadow: 1rem 1rem 30rem rgb(0, 0,0, .2);
@@ -23,7 +23,9 @@
   background-color: var(--color-grey-light-100);
   color: var(--color-grey-light-100);
   border-bottom: var(--color-grey-light-200);
-  
+  padding: 1rem 0;
+  height: 7rem;
+  font-size: 1.4rem;
   
   display: flex;
   justify-content: space-between;
@@ -31,6 +33,8 @@
 }
 
 .content{
+  display: flex;
+  
 }
 
 .sidebar{
