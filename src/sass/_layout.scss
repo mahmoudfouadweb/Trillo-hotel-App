@@ -15,18 +15,22 @@
 .container{
   max-width: 144rem;
   margin: 8rem auto;
-  background-color: var(--color-grey-light-300);
+  min-height: 50rem;
+  box-shadow: 1rem 1rem 30rem rgb(0, 0,0, .2);
 }
 
 .header{
-  background-color: var(--color-grey-dark-100);
+  background-color: var(--color-grey-light-100);
   color: var(--color-grey-light-100);
+  border-bottom: var(--color-grey-light-200);
   
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content{
-display: flex;
-min-height: 50rem;
 }
 
 .sidebar{

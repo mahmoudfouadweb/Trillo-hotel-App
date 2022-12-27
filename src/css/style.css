@@ -38,20 +38,47 @@ body {
   font-size: 3.2rem;
 }
 
+.logo {
+  width: 3.7rem;
+  height: 3.7rem;
+  margin-left: 3rem;
+}
+
+.search {
+  flex: 0 0 40%;
+}
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: var(--color-grey-light-200);
+}
+.search__icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.user-nav__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.user-nav__user-photo {
+  height: 3.7rem;
+  border-radius: 50%;
+}
 .container {
   max-width: 144rem;
   margin: 8rem auto;
-  background-color: var(--color-grey-light-300);
+  min-height: 50rem;
+  box-shadow: 1rem 1rem 30rem rgba(0, 0, 0, 0.2);
 }
 
 .header {
-  background-color: var(--color-grey-dark-100);
+  background-color: var(--color-grey-light-100);
   color: var(--color-grey-light-100);
-}
-
-.content {
+  border-bottom: var(--color-grey-light-200);
   display: flex;
-  min-height: 50rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .sidebar {

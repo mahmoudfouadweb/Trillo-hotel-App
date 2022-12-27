@@ -2,22 +2,23 @@
 // LOGO
 
 .logo{
-  width: 50rem;
-  height: 20rem,;
+  width: 3.7rem;
+  height: 3.7rem,;
+  margin-left: 3rem;
+  
 }
 
 
-.search__icon{
-  width: 50rem;
-}
+
 /////////////////////////////////////////////
 // SEARCH
 .search{
-  width: 90rem;
+flex: 0 0 40%;
   
   &__input{
-    background-color: blue;
-    width: 100rem;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--color-grey-light-200);
   }
   
   &__button{
@@ -35,26 +36,31 @@
 /////////////////////////////////////////////
 // USER NAVIGATION
 .user-nav{
+
   &__icon-box{
     
   }
   
-  &__icon-icon{
-    
-  }
-  
-  
-  &__icon-notification{
-    
-  }
-  
-  &__icon-user{
-    
-  }
-  
-  &__icon-photo{
+  &__icon{
     width: 2.4rem;
+    height: 2.4rem;
   }
   
-  &__icon-user-name{}
+  
+  &__notification{
+    
+  }
+  
+  &__user{
+    
+  }
+  
+  &__user-photo{
+    height: 3.7rem;
+    border-radius: 50%;
+    
+  }
+  
+  &__user-name{
+  }
 }
