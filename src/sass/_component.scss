@@ -33,6 +33,11 @@
       transition: all 0.2s ease-in;
       background-color: var(--color-grey-light-300);
     }
+    
+    &::-webkit-input-placeholder{
+      color: var(--color-grey-light-400);
+      font-size: 1.4rem;
+    }
   }
   
   &__input:focus + &__button {
@@ -56,6 +61,7 @@
   &__icon{
     height: 2rem;
     width: 2rem;
+    fill: var(--color-grey-dark-300);
   }
 }
 
