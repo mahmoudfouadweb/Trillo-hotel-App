@@ -60,6 +60,7 @@
   &__button{
     border: none;
     background-color: var(--color-grey-light-200);
+    cursor: pointer;
     
     &:focus{
       outline: none;
@@ -243,7 +244,7 @@
   display: flex ;
   align-items: center;
   justify-content: flex-start;
-  border-bottom: 1px solid var(--color-grey-light-200);
+  border-bottom: var(--line);
   
   background-color: var(--color-grey-light-100);
   
@@ -272,22 +273,30 @@
     color: var(--color-primary);
     font-size: 1.2rem;
     display: flex;
+    align-items: center;
+  }
+  
+  &__icon-location{
+    margin-right: 0.5rem;
   }
   
   &__rating{
     background-color: var(--color-primary);
-    padding: 1rem 2.25rem ;
+    color: #fff;
     margin-left: 3rem;
+    align-self: stretch;
+    padding: 0 2.25rem ;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
   }
   
   &__rating-average{
     font-size: 2.25rem;
     font-weight: 300;
+    
     margin-bottom: -3px;
     
   }
@@ -298,6 +307,8 @@
   }
 }
 
+      /////////////////////////////////////////////
+// BUTTON INLINE
 .btn-inline{
   display: inline-block;
   font-size: inherit;
@@ -308,7 +319,31 @@
   border-bottom: 1px solid currentColor;
   cursor: pointer;
   transition: all .2s;
+  
     &:hover{
       color: var(--color-grey-dark-100);
     }
+    
+    &:focus{
+      outline: none;
+      animation: pulsate 1s infinite;
+    }
+ @keyframes pulsate {
+  0%{
+    transform: scale(1);
+    box-shadow: none;
+  }
+  
+  50%{
+    box-shadow: 0 1rem 3rem rgba(0,0,0, 0.2);
+    transform: scale(1.05);
+  }
+  
+  100%{
+    transform: scale(1);
+    box-shadow: none;
+  }
+  
+ }   
+    
 }
