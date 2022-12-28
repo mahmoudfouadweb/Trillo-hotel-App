@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-secondary: #222;
   --color-primary: #eb2f64;
@@ -339,6 +340,52 @@ body {
   margin-right: -2rem;
 }
 
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+.review__user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.review__photo {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+}
+.review__user-box {
+  margin-right: auto;
+}
+.review__user-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.review__user-date {
+  color: var(--color-grey-dark-300);
+  font-size: 1.2rem;
+}
+.review__rating {
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: 400;
+}
+.review::before {
+  content: ”\"″;
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3.3rem;
+  font-family: sans-serif;
+}
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -378,13 +425,13 @@ body {
 
 .detail {
   display: flex;
+  font-size: 1.4rem;
   padding: 4.5rem;
   background-color: var(--color-grey-light-100);
   border-bottom: var(--line);
 }
 
 .description {
-  font-size: 1.4rem;
   background-color: #fff;
   box-shadow: var(--shadow-light);
   padding: 3rem;
