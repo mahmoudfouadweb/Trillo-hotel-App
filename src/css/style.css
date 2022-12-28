@@ -221,23 +221,48 @@ body {
   width: 1.7rem;
   height: 1.7rem;
   fill: var(--color-primary);
+  margin-right: 0.5rem;
 }
 .overview__location {
   color: var(--color-primary);
+  font-size: 1.2rem;
+  display: flex;
 }
-.overview__location button {
-  background-color: transparent;
-  border: none;
+.overview__rating {
+  background-color: var(--color-primary);
+  padding: 1rem 2.25rem;
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.overview__rating-average {
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin-bottom: -3px;
+}
+.overview__rating-count {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.btn-inline {
   display: inline-block;
-  cursor: pointer;
+  font-size: inherit;
+  border: none;
+  color: currentColor;
+  background-color: transparent;
   padding-bottom: 2px;
   border-bottom: 1px solid currentColor;
+  cursor: pointer;
   transition: all 0.2s;
-  color: currentColor;
 }
-.overview__location button:hover {
+.btn-inline:hover {
   color: var(--color-grey-dark-100);
 }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
