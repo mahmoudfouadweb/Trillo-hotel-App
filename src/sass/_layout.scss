@@ -72,8 +72,11 @@
 }
 
 .user-reviews{
-  background-color: yellowgreen;
+  // background-color: yellowgreen;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 

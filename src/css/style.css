@@ -262,15 +262,22 @@ body {
   display: inline-block;
   font-size: inherit;
   border: none;
-  color: currentColor;
+  color: var(--color-primary);
   background-color: transparent;
   padding-bottom: 2px;
   border-bottom: 1px solid currentColor;
   cursor: pointer;
   transition: all 0.2s;
 }
+.btn-inline span {
+  margin-left: 3px;
+}
 .btn-inline:hover {
   color: var(--color-grey-dark-100);
+}
+.btn-inline:hover span {
+  margin-left: 8px;
+  transition: margin-left 0.2s ease-out;
 }
 .btn-inline:focus {
   outline: none;
@@ -347,12 +354,17 @@ body {
   margin-bottom: 3.5rem;
   position: relative;
 }
+.review__text {
+  z-index: 10;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
 .review__user {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  margin-top: 2rem;
 }
 .review__photo {
   height: 4.5rem;
@@ -377,13 +389,23 @@ body {
   font-weight: 400;
 }
 .review::before {
-  content: ”\"″;
-  color: black;
+  content: "“";
   position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 3.3rem;
+  top: -2.75rem;
+  left: -1rem;
+  line-height: 1;
+  font-size: 20rem;
+  color: var(--color-grey-light-200);
   font-family: sans-serif;
+  z-index: 1;
+}
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+}
+.cta__book-now {
+  text-transform: uppercase;
 }
 
 .container {
@@ -440,8 +462,10 @@ body {
 }
 
 .user-reviews {
-  background-color: yellowgreen;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

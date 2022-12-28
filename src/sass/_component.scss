@@ -313,15 +313,24 @@
   display: inline-block;
   font-size: inherit;
   border: none;
-  color: currentColor;
+  color: var(--color-primary);
   background-color: transparent;
   padding-bottom: 2px;
   border-bottom: 1px solid currentColor;
   cursor: pointer;
   transition: all .2s;
   
+  & span {
+    margin-left: 3px;
+  }
+  
     &:hover{
       color: var(--color-grey-dark-100);
+      
+      & span {
+        margin-left: 8px;
+        transition: margin-left .2s ease-out;
+      }
     }
     
     &:focus{
@@ -435,7 +444,10 @@
   // flex-direction: column;
   
   &__text {
-    
+    z-index: 10;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
   }
   
   &__user {
@@ -443,7 +455,6 @@
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    margin-top: 2rem;
   }
   
   &__photo {
@@ -478,14 +489,27 @@
   }
   
   &::before{
-    content:”\0022″; 
-    color: black;
-
+    content: "\201C";
     position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 3.3rem;
+    top: -2.75rem;
+    left: -1rem;
+    line-height: 1;
+    font-size: 20rem;
+    color: var(--color-grey-light-200);
     font-family: sans-serif;
+    z-index: 1;
   }
 // end of reviews
+}
+
+/////////////////////////////////////////////
+//CALL TO ACTION
+.cta{
+  padding: 3.5rem 0;
+  text-align: center;
+  
+  &__book-now{
+    text-transform: uppercase;
+  }
+  
 }
