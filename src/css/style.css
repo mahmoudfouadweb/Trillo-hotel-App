@@ -34,6 +34,12 @@ html {
     font-size: 50%;
   }
 }
+@media only screen and (max-width: 26.875em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -42,7 +48,7 @@ body {
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .logo {
@@ -266,6 +272,11 @@ body {
   border-bottom: var(--line);
   background-color: var(--color-grey-light-100);
 }
+@media only screen and (max-width: 26.875em) {
+  .overview {
+    flex-wrap: wrap;
+  }
+}
 .overview__heading {
   font-size: 2.25rem;
   font-weight: 300;
@@ -279,9 +290,22 @@ body {
     padding: 1.25rem 2rem;
   }
 }
+@media only screen and (max-width: 26.875em) {
+  .overview__heading {
+    font-size: 1.4rem;
+    padding: 1.1rem 1rem;
+    flex: 0 0 100%;
+  }
+}
 .overview__stars {
   display: flex;
   margin-right: auto;
+}
+@media only screen and (max-width: 26.875em) {
+  .overview__stars {
+    margin-left: 2.5rem;
+    margin-right: auto;
+  }
 }
 .overview__icon-star, .overview__icon-location {
   width: 1.7rem;
@@ -312,6 +336,11 @@ body {
 @media only screen and (max-width: 37.5em) {
   .overview__rating {
     padding: 0 1.5rem;
+  }
+}
+@media only screen and (max-width: 26.875em) {
+  .overview__rating {
+    padding: 0 2rem;
   }
 }
 .overview__rating-average {
@@ -494,6 +523,11 @@ body {
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 2.5rem;
+}
+@media only screen and (max-width: 26.875em) {
+  .cta__book-now {
+    font-size: 1.8rem;
+  }
 }
 @media only screen and (max-width: 56.25em) {
   .cta {

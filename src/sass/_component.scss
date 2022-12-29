@@ -286,6 +286,11 @@
   border-bottom: var(--line);
   
   background-color: var(--color-grey-light-100);
+  // flex-direction: column;
+  
+  @media only screen and (max-width: $bp-X2small) {
+    flex-wrap: wrap;
+    }
   
   &__heading{
     font-size: 2.25rem;
@@ -298,12 +303,21 @@
       font-size: 1.8rem;
       padding: 1.25rem 2rem;
     }
+    
+    @media only screen and (max-width: $bp-X2small) {
+      font-size: 1.4rem;
+      padding: 1.1rem 1rem;
+      flex: 0 0 100%;
+    }
   }
   
   &__stars{
     display: flex;
-    // flex: 1;
     margin-right: auto;
+    @media only screen and (max-width: $bp-X2small) {
+    margin-left: 2.5rem;
+    margin-right: auto;
+    }
   }
   
   &__icon-star, &__icon-location{
@@ -318,6 +332,10 @@
     font-size: 1.2rem;
     display: flex;
     align-items: center;
+    
+    @media only screen and (max-width: $bp-X2small) {
+    // order: 1;
+    }
   }
   
   &__icon-location{
@@ -339,6 +357,11 @@
     @media only screen and (max-width: $bp-small) {
       padding: 0 1.5rem;
     }
+    
+    @media only screen and (max-width: $bp-X2small) {
+      padding: 0 2rem;
+      
+      }
   }
   
   &__rating-average{
@@ -571,13 +594,14 @@
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 2.5rem;
-    
+    @media only screen and (max-width: $bp-X2small) {
+      font-size: 1.8rem;
+    } 
   }
   @media only screen and (max-width: $bp-medium) {
     flex-direction: row;
     padding: 2.5rem 0;
   }
-  
 }
 /////////////////////////////////////////////
 //CALL TO ACTION
